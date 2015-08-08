@@ -1,0 +1,14 @@
+{
+  "name": "tacoapp",
+  "version": "1.0.0",
+  "description": "Aplicación del curso de ansible",
+  "main": "tacos.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ansible"
+  ],
+  "author": "grupo de ansible y tacos",
+  "license": "MIT"
+}
