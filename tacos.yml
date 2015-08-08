@@ -9,3 +9,6 @@
   tasks:
     - name: "Iniciar la aplicación"
       command: forever start /opt/software/tacoapp/tacos.js
+
+    - name: "Imprime si es produccion"
+      debug: msg="{{ambiente}}"
