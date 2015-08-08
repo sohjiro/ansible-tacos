@@ -6,8 +6,18 @@
     - name: "Instalar node.js"
       apt: name=nodejs state=present
 
+    - name: "Install node legacy"
+      apt:
+        name: nodejs-legacy
+        state: present
+
+    - name: "Install npm"
+      apt:
+        name: npm
+        state: present
+
     - name: "Instalar forever"
       npm: name=forever global=yes state=present
 
     - name: "Iniciar la aplicación"
-      npm: forever start /opt/software/tacoapp/tacos.js
+      command: forever start /opt/software/tacoapp/tacos.js
