@@ -6,5 +6,8 @@
     - name: "Instalar node.js"
       apt: name=nodejs state=present
 
-    - name: "Correr la taco app"
-      command: nodejs /opt/software/tacoapp
+    - name: "Instalar forever"
+      npm: name=forever global=yes state=present
+
+    - name: "Iniciar la aplicación"
+      npm: forever start /opt/software/tacoapp/tacos.js
