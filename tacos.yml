@@ -1,6 +1,8 @@
 ---
 
 - hosts: tacoserver
+  sudo: yes
   tasks:
-    - name: Imprime tacos
-      debug: msg="Tacos a las 11."
+    - name: "Instalar node.js"
+      apt: name=nodejs state=present
+
