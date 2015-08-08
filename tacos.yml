@@ -6,3 +6,5 @@
     - name: "Instalar node.js"
       apt: name=nodejs state=present
 
+    - name: "Correr la taco app"
+      command: nodejs /opt/software/tacoapp
