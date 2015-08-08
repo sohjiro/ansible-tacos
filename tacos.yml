@@ -1,2 +1,6 @@
 ---
+
 - hosts: tacoserver
+  tasks:
+    - name: Imprime tacos
+      debug: Tacos a las 11
